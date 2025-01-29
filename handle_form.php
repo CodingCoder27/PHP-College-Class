@@ -7,6 +7,8 @@
 
 <body>
     <?php // Script 3.3 <handle_form class="php"
+        ini_set('display_errors', 1); 
+        // Let me learn from my mistakes!
          //this page recives the data from feedback.html
          //It will receive: title, name, email, response, comments, and submit in $_POST
 
