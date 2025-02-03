@@ -1,0 +1,33 @@
+<!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Product Cost Calulator</title>
+    </head>
+    <body>
+        <div>
+            <p>Fill out this form to calculatre the total cost:</p>
+            
+            <form action="handle_calc3.php" method="post">
+                <p>Price: <input type="text" name="price" size="5" /></p>
+                <p>Quantity: <input type="text" name="quantity" size="5" /></p>
+                <p>Discount: <input type="text" name="discount" size="5" /></p>
+                <p>Tax: <input type="text" name="tax" size="5" />(%)</p>
+                
+                <p> Shipping Method: <select name="shipping">
+                    <option value="5.00">Slow and steady</option>
+                    <option value="8.95">Put a move on it</option>
+                    <option value="12.36">I need it yesterday</option>
+                    </select>
+                </p>
+
+                <P> Number of payments to make:
+                    <input type = "text" name="payments" size="3"/>
+                </P>
+                
+                
+                <p><input type="submit" name="submit" value="Calculate" /></p>
+            </form>
+        </div>
+    </body>
+</html>
