@@ -19,6 +19,7 @@
         $discount = $_POST['discount'];
         $tax = $_POST['tax'];
         $payments = $_POST['payments'];
+        $shipping = $_POST['shipping'];
 
         // Calculate the total:
         $total = $price * $quantity;
