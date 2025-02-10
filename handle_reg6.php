@@ -10,7 +10,7 @@
         <?php //script 6.2
 
         //error management
-        //error_reporting(0);
+        error_reporting(0);
 
         $okay = true;
 
@@ -54,21 +54,26 @@
             $okay = false;
         }
 
-        //validate the color:
-        if ($_POST['color'] == 'red') {
-            $color_type = 'primary';
-        } elseif ($_POST['color'] =='yellow') {
-            $color_type = 'primary';
-        } elseif ($_POST['color'] == 'green') {
-            $color_type = 'secondary';
-        } elseif ($_POST['color'] == 'blue') {
-            $color_type ='primary';
-        } elseif ($_POST['color'] == 'purple') {
-            $color_type = 'secondary';
-        } else {
-            //problem
-            print '<p class="error"> Please select your favorite color.</p>';
-            $okay = false;
+        switch ($_POST['color']) {
+            case 'red':
+                $color_type = 'primary';
+                break;
+            case 'green':
+                $color_type = 'secondary';
+                break;
+            case 'blue':
+                $color_type = 'primary';
+                break;
+            case 'yellow':
+                $color_type = 'primary';
+                break;
+            case 'purple':
+                $color_type = 'secondary';
+                break;
+            default:
+                print '<p class="error"> Please select your favorite color.</p>';
+                $okay = false;
+                break;
         }
 
         if ($okay) {
