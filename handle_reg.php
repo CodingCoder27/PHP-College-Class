@@ -8,6 +8,9 @@
         <h1>Registration Results</h1>
         <?php //script 6.2
 
+        //error management
+        error_reporting(0);
+
         $okay = true;
 
         if ($okay) {
